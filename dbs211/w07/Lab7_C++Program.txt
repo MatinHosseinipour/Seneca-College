@@ -1,0 +1,63 @@
+#include <iostream>
+#include <occi.h>
+
+using oracle::occi::Environment;
+using oracle::occi::Connection;
+using namespace oracle::occi;
+using namespace std;
+
+int main(void) {
+	Environment* env = nullptr;
+	Connection* conn = nullptr;
+
+	string str = "";
+	string user = "USER";
+	string pass = "PASS";
+	string server = "myoracle12c.senecacollege.ca:1521/oracle12c";
+
+	try
+	{
+		env = Environment::createEnvironment(Environment::DEFAULT);
+		conn = env->createConnection(user, pass, server);
+		cout << "Connection was successful" << endl;
+
+		Statement* statem = conn->createStatement();
+		ResultSet* results; 
+
+		cout << "*************************** EMPLOYEE TABLE REPORT ***************************" << endl;
+		cout << "Employee Report:" << endl;
+		results = statem->executeQuery("select e.employeenumber, e.firstname || ' ' || e.lastname as name, phone, e.extension from employees e join offices using(officecode) where city = 'San Francisco'");
+		while (results->next()) {
+			int emp_num = results->getInt(1);
+			string name = results->getString(2);
+			string phone = results->getString(3);
+			string ext = results->getString(4);
+			cout << "ID: " << emp_num << "		Name: " << name << "		Phone: " << phone << "		Extension: " << ext << endl;
+		}
+		delete results;
+		cout << "Manager Report:" << endl;
+		results = statem->executeQuery("select e.employeenumber, e.firstname || ' ' || e.lastname as name, phone, e.extension from employees e2 join employees e using(officecode) left outer join offices using(officecode) where e2.reportsto = e.employeenumber order by e.employeenumber");
+		int check_rep = 0;
+		while (results->next()) {
+			int emp_num = results->getInt(1);
+			if (emp_num != check_rep)
+			{
+				string name = results->getString(2);
+				string phone = results->getString(3);
+				string ext = results->getString(4);
+				check_rep = emp_num;
+				cout << "ID: " << emp_num << "		Name: " << name << "		Phone: " << phone << "		Extension: " << ext << endl;
+			}	
+		}
+
+		conn->terminateStatement(statem);
+		env->terminateConnection(conn);
+		Environment::terminateEnvironment(env);
+	}
+	catch (SQLException& sqlExcp)
+	{
+		cout << sqlExcp.getErrorCode() << ": " << sqlExcp.getMessage() << endl;
+	}
+
+	return 0;
+}

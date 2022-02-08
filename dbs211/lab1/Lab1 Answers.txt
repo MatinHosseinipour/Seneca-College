@@ -1,0 +1,106 @@
+
+
+/* 1)	How many tables have been created? List the names of the created tables.
+8 tables
+
+Customers
+Employees
+Offices
+Order Details
+Orders
+Payments
+Product Lines
+Products
+
+*/
+
+/* 2)	Click on table customers. Click on the Data tab near the top of the worksheet. How many rows are there in the table customers?
+122 rows
+
+*/
+
+/* 4)	How many columns does the customers table have? List the column names.
+6 Columns
+
+Column_name
+Data_Type
+Nullable
+Data_Default
+Column_ID
+Comments
+*/
+
+/* 5)	What is the value of each column in the first row in table customers? Write the column name and the column data type in addition to the value.
+
+CostumerNumber | Number(38, 0) | No | Null | 1 | Null
+
+*/
+
+/* 6)	Write the number of rows and columns for the rest of the tables in your schema.  Format it something like the following.
+Table Name		  Rows			Columns
+    Employees		 23			8
+    Oficces		     7			9
+    OrderDetails	 59			5
+    Orders 	  	     81			6
+    Payments		 61			4
+    ProductLines     7			2
+    Products		 67			6
+
+*/
+
+/*  7)	Right Click on the orderdetails table and choose tables/count rows.  How many rows does the order details table include?
+2996 rows
+*/
+
+/* 8)	Write the following SQL statement in the new tab.
+desc offices; 
+	You can also write
+describe offices;
+	What is the result of the statement execution?
+
+
+*/
+desc offices;
+/* Output:
+
+Name         Null?    Type         
+------------ -------- ------------ 
+OFFICECODE   NOT NULL VARCHAR2(10) 
+CITY         NOT NULL VARCHAR2(50) 
+PHONE        NOT NULL VARCHAR2(50) 
+ADDRESSLINE1 NOT NULL VARCHAR2(50) 
+ADDRESSLINE2          VARCHAR2(50) 
+STATE                 VARCHAR2(50) 
+COUNTRY      NOT NULL VARCHAR2(50) 
+POSTALCODE   NOT NULL VARCHAR2(15) 
+TERRITORY    NOT NULL VARCHAR2(10)
+
+*/
+
+/* 
+9)	Type the following statements in, execute them, then briefly describe what the statement is doing!
+SELECT * FROM employees;
+SELECT * FROM customer ORDER BY ContactLastName;
+
+*/
+SELECT * FROM employees;
+SELECT * FROM customers ORDER BY ContactLastName;
+/*
+first of, second code is wrong it has to be customer[s] not costumer
+the outcome of this code was that the compiler printed out all the employees information stored in the table 'employees' but ordered them
+based on their lastnames that were stored in 'customers' table
+*/
+
+/* 10)	How many constraints does the products table have?
+11 constraints
+
+*/
+
+/* 11)	Find a way to turn on line numbers in the gutter.
+Tools > Preferences > Code Editor > Line Gutter > Show Line Number
+
+*/
+
+/* 12)	Set the font size in the worksheet editor to a size that is best for you.  (Hint: Tools/Preferences)
+To be honest with you im not picky.
+*/
