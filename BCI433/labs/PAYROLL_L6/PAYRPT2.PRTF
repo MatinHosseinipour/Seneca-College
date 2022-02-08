@@ -1,0 +1,56 @@
+000100211110     A          R TITLE
+000101211110     A                                  2  3DATE
+000102211110     A                                      EDTCDE(Y)
+000103211110     A                                  2 13TIME
+000104211110     A                                  2 96PAGNBR
+000105211110     A                                  2 41'Weekly payroll report'
+000106211110     A                                  3  4'Name: Matin Hosseini Pour'
+000107211110     A                                  2 90'page:'
+000108211110     A            SHIFTTYPE     30      3 36
+000109211110     A          R COLHDG                    SPACEB(2)
+000110211110     A                                     6'Employee'
+000111211110     A                                    20'Work'
+000112211110     A                                    30'Pay'
+000113211110     A                                    40'Hourly'
+000114211110     A                                    50'Hours'
+000115211110     A                                    60'Regular'
+000116211110     A                                    76'Overtime'
+000117211110     A                                    91'Total'
+000118211110     A                                     6'Number'
+000119211110     A                                      SPACEB(1)
+000120211110     A                                    20'Shift'
+000121211110     A                                    30'Class'
+000122211110     A                                    40'Rate'
+000123211110     A                                    50'Worked'
+000124211110     A                                    60'Pay'
+000125211110     A                                    76'Pay'
+000126211110     A                                    91'Pay'
+000127211110     A          R EMPDETAIL                 SPACEB(2)
+000128211110     A            EMPNUM    R              6REFFLD(SHIFTWEEK/EMPNUM SENECAPAY/S-
+000129211110     A                                      HIFTWEEK)
+000130211110     A                                      EDTWRD('   -   -   -')
+000131211110     A            WORKSHIFT R             21REFFLD(SHIFTWEEK/WORKSHIFT +
+000132211110     A                                      SENECAPAY/SHIFTWEEK)
+000133211110     A            PAYCLASS  R             30REFFLD(SHIFTWEEK/PAYCLASS +
+000134211110     A                                      SENECAPAY/SHIFTWEEK)
+000135211110     A            HOURLYRATE     5  2     40EDTCDE(1)
+000136211110     A            HRSWORKED R             50REFFLD(SHIFTWEEK/HRSWORKED +
+000137211110     A                                      SENECAPAY/SHIFTWEEK)
+000138211110     A            REGULARPAY     7  2     60EDTCDE(1)
+000139211110     A            OTPAY          7  2     76EDTCDE(2)
+000140211110     A            HOURLYPAY      7  2     91EDTCDE(1)
+000141211110     A          R TOTALS                    SPACEB(2)
+000142211110     A                                    44'Totals:'
+000143211110     A            TOTREGPAY      9  2     58EDTCDE(1 $)
+000144211110     A            TOTOTPAY       9  2     75EDTCDE(1 $)
+000145211110     A            TOTWKPAY       9  2     91EDTCDE(1 $)
+000146211110
+000147211110     A*%%RS+<record-sequences>
+000148211110     A*%%RS+ <sequence name="Untitled">
+000149211110     A*%%RS+  <device type="printer" width="132" height="66" />
+000150211110     A*%%RS+  <record-write record-format="TITLE" />
+000151211110     A*%%RS+  <record-write record-format="COLHDG" />
+000152211110     A*%%RS+  <record-write record-format="EMPDETAIL" />
+000153211110     A*%%RS+  <record-write record-format="TOTALS" />
+000154211110     A*%%RS+ </sequence>
+000155211110     A*%%RS </record-sequences>

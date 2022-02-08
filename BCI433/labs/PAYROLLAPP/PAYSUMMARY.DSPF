@@ -1,0 +1,28 @@
+000001211108     A          R RECORD1
+000002211108     A            DAYHRS    R        O  6 43REFFLD(SHIFTRATES/DAYHRS +
+000003211108     A                                      SENECAPAY/SHIFTRATES)
+000004211108     A                                      EDTCDE(1)
+000005211108     A            AFTHRS    R        O  7 43REFFLD(SHIFTRATES/AFTHRS +
+000006211108     A                                      SENECAPAY/SHIFTRATES)
+000007211108     A                                      EDTCDE(1)
+000008211108     A            NIGHTHRS  R        O  8 43REFFLD(SHIFTRATES/NIGHTHRS +
+000009211108     A                                      SENECAPAY/SHIFTRATES)
+000010211108     A                                      EDTCDE(1)
+000011211108     A                                  1  3USER
+000012211108     A                                  2  3'Matin Hosseini Pour'
+000013211108     A                                  1 26'S E N E C A PAYROLL PROGRAM'
+000014211108     A                                  1 71DATE
+000015211108     A                                      EDTCDE(Y)
+000016211108     A                                  2 71TIME
+000017211108     A                                  4 13'Rates:'
+000018211108     A                                  6 27'Day Hours:'
+000019211108     A                                  7 27'After Hours:'
+000020211108     A                                  8 27'Night Hours:'
+000021211108     A                                  9 13'Totals:'
+000022211108     A                                 10 27'Regular Pay:'
+000023211108     A                                 11 27'Overtime Pay:'
+000024211108     A                                 12 27'Company Payout:'
+000025211108     A            TOTREGPAY      9  2O 10 47EDTCDE(1)
+000026211108     A            TOTOTPAY       9  2  11 47EDTCDE(1)
+000027211108     A            TOTWKPAY       9  2  12 46EDTCDE(1 $)
+000100

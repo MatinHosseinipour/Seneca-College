@@ -1,0 +1,75 @@
+select into - for a single row
+
+
+cursor - for several rows
+
+	1. declare the cursor
+	2. open the cursor
+	3. fetch rows from the cursor (in a loob)
+	4. update, delete or report on fetched row
+	5. close the cursor (after processing all the fetched rows)
+
+
+
+required while coding:
+
+	dcl-s EndOfFile IND;
+	dcl-ds CustomerRecord;
+	 	CsCustId Packed(7,0);
+		CsName Char(30);
+		CsShipCity Char(30);
+		CsDiscount Packed(5:3);
+		CsCityNull BinDec(4:0);
+		CsDiscNull BinDec(4:0);
+	End-Ds CustomerRecord;
+
+//Declaring a cursor
+
+	Exec sql
+	Declare Name Cusrsor
+		for Select *
+			From Customer
+			Order by CustID;
+			(*FOR READ ONLY*);
+
+//loading a temporary result table
+
+	Exec Sql
+	Open NameOfTheCursor;
+
+		If (SQLCODE <> 0) OR (SQLWN0 = 'W') AND
+		   (SQLWN2 <> 'W');
+			EndOfFile = *ON;
+		EndIf;
+
+//retrieving a row from the temporary result table
+
+// this needs to be in a loop
+
+	Exec Sql
+		Fetch Next
+			From NameOfTheCursor
+			Into	:CsCustId,
+				:CsName,
+				:CsShipCity CsCityNull,
+				:CsDiscount CsDiscNull;
+		If SQLCODE <> 0 or SQLWN0 = 'w';
+			EndOfFile = *ON;
+		EndIf;
+
+// process the fetched record - update, delete or report on it
+
+	Exfmt Record2;
+
+// finished with the temporary result table
+
+// this is not in the loop
+
+	Exec sql
+		Close NameOfTheCursor;
+
+		If SQLCODE <> 0 or SQLWN0 = 'w';
+			DSPLY 'Problem closing the cursor';
+		EndIf;
+
+//

@@ -1,0 +1,74 @@
+000100211018             PGM
+000101211018             DCLF       LAB4DSP
+000102211021             DCL        &OUTQ *CHAR 10
+000103211021             DCL        &OUTQLIB *CHAR 10
+000104211021             DCL        &QMAX *CHAR 6
+000105211021             DCL        &DATE *CHAR 8
+000106211021             DCL        &TIME *CHAR 8
+000107211021             DCL        &PVSN *CHAR 13
+000108211021             DCL        &SYSLVL *CHAR 9
+000109211018             SNDRCVF
+000110211018             DOWHILE    (&IN03 = '0')
+000111211018                SELECT
+000112211018                   WHEN       (&OPTIONIN = '1' *OR &OPTIONIN = '01') DO
+000113211021                      CALLSUBR   OPTION1
+000114211018                   ENDDO
+000115211018                   WHEN       (&OPTIONIN = '2' *OR &OPTIONIN = '02') DO
+000116211021                      CALL       AUTOINSRPG
+000117211018                   ENDDO
+000118211018                   WHEN       (&OPTIONIN = '3' *OR &OPTIONIN = '03') DO
+000119211021                      CALLSUBR   OPTION3
+000122211021                   ENDDO
+000123211018                   WHEN       (&OPTIONIN ='4' *OR &OPTIONIN ='04') DO
+000124211021                      CALLSUBR   OPTION4
+000125211018                   ENDDO
+000126211018                   WHEN       (&OPTIONIN = '5' *OR &OPTIONIN = '05') DO
+000127211021                      CALLSUBR   OPTION5
+000128211018                   ENDDO
+000129211018                   OTHERWISE  CHGVAR &IN99 '1'
+000130211018                ENDSELECT
+000131211018                SNDRCVF
+000132211018                CHGVAR     &IN99 '0'
+000133211018                CHGVAR     &MSGTXT1 (' ')
+000134211021                CHGVAR     &MSGTXT2 (' ')
+000135211018
+000136211018
+000137211018             ENDDO
+000138211021
+000139211021
+000140211021             SUBR       OPTION1
+000141211021                RTVUSRPRF  OUTQ(&OUTQ) OUTQLIB(&OUTQLIB)
+000142211021                CHGVAR     &MSGTXT1 ('Signed on Users''s output queue is ' *CAT &OUTQLIB *TCAT +
+000143211021                             '/' *CAT &OUTQ)
+000144211021                CHGVAR     &MSGTXT2 ('CLLE Programs can report on and manage the users on the +
+000145211021                             system')
+000146211021             ENDSUBR
+000147211021             SUBR       OPTION3
+000148211021                RTVSYSVAL  SYSVAL(QMAXSIGN) RTNVAR(&QMAX)
+000149211021                CHGVAR     &MSGTXT1 ('Maximum number of signon attempts allowed ' *CAT &QMAX +
+000150211021                             *BCAT 'tries')
+000151211021                CHGVAR     &MSGTXT2 ('CLLE Programs can report on the system and manage system +
+000152211021                             wide settings')
+000153211021             ENDSUBR
+000154211021             SUBR       OPTION4
+000155211021                RTVUSRPRF  PRVSIGN(&PVSN) USRPRF(*CURRENT)
+000156211021                RTVUSRPRF  RTNUSRPRF(&OUTQ) USRPRF(*CURRENT)
+000157211021                CHGVAR     &DATE (%SST(&PVSN 4 2) *CAT '/' *CAT %SST(&PVSN 6 2) *CAT '/' *CAT +
+000158211021                             %SST(&PVSN 2 2))
+000159211021                CHGVAR     &TIME (%SST(&PVSN 8 2) *CAT ':' *CAT %SST(&PVSN 10 2) *CAT ':' *CAT +
+000160211021                             %SST(&PVSN 12 2))
+000161211021                CHGVAR     &MSGTXT1 ('Previous sign on for user ' *BCAT &OUTQ *BCAT 'was on ' +
+000162211021                             *CAT &DATE *BCAT &TIME)
+000163211021                CHGVAR     &MSGTXT2 ('CLLE Programs can report on and manage the users on the +
+000164211021                             system')
+000165211021             ENDSUBR
+000166211021             SUBR       OPTION5
+000167211021                RTVOBJD    OBJ(QSYS/QCMD) OBJTYPE(*PGM) SYSLVL(&SYSLVL)
+000168211021                CHGVAR     &MSGTXT1 ('The system level of the operating system is' *BCAT +
+000169211021                             &SYSLVL)
+000170211021                CHGVAR     &MSGTXT2 ('CLLE Programs can report on system information')
+000171211021             ENDSUBR
+000172211018             ENDPGM
+000173211018
+000174211018
+000175211018

@@ -1,0 +1,51 @@
+000001210930     A          R AUTOINFO
+000002210930     A                                  1  2USER
+000003210930     A                                  1 72DATE
+000004210930     A                                      EDTCDE(Y)
+000005210930     A                                  2 22'A U T O   I N S U R A N C E   Q U -
+000006210930     A                                      O T E'
+000007210930     A                                  3  2'Matin Hosseini Pour'
+000008210930     A                                  4  8'Your Replacement Value:'
+000009210930     A                                  6  6'Annual Kilometres Driven:'
+000010210930     A                                  8 15'Year of Vehicle:'
+000011210930     A                                 10 10'D R I V I N G   R E C O R D'
+000012210930     A                                 11 27'At Fault Accidents:'
+000013210930     A                                 12 20'Number of Traffic Tickets:'
+000014210930     A                                 13 24'Current Dermit Points:'
+000015210930     A            REPLACEVAL     7  0B  4 34
+000016210930     A  97                                  DSPATR(RI PC)
+000017210930     A  75                                  DSPATR(PR)
+000018210930     A            KILOMETRES     6  0B  6 34
+000019210930     A  98                                  DSPATR(RI PC)
+000020210930     A  75                                  DSPATR(PR)
+000021210930     A            VYEAR           L  B  8 34
+000022210930     A  99                                  DSPATR(RI PC)
+000023210930     A  75                                  DSPATR(PR)
+000024210930     A            ACCS           2Y 0B 11 49RANGE(0 10)
+000025210930     A  75                                  DSPATR(PR)
+000026210930     A            TRAFS          2Y 0B 12 49RANGE(0 10)
+000027210930     A  75                                  DSPATR(PR)
+000028210930     A            DERMS          2Y 0B 13 49RANGE(0 15)
+000029210930     A  75                                  DSPATR(PR)
+000030210930     A  97                              4 51'Value must not be ZERO'
+000031210930     A  98                              6 51'Value must not be ZERO'
+000032211017     A  99                              8 50'Year must be > 1886/01/29'
+000033211017     A  50                              9 46'Year could not be in the future'
+000034211018     A                                 10 60' '
+000035211018     A            TES2           9   B 10 47
+000036210930     A          R AUTOQUOTE                 CF03(03 'Exit Program')
+000037210930     A                                      OVERLAY
+000038210930     A                                 15 12'Vehicle'
+000039210930     A                                 16 14'Age'
+000040210930     A                                 15 23'Annual'
+000041210930     A                                 16 24'Cost'
+000042211017     A            AGE            3  0O 18 14
+000043210930     A            COST           7  2O 18 22EDTCDE(1)
+000044210930     A                                 20 11'F3 - EXIT'
+000045211017     A            MESSAGE       49   O 17 37
+000100
+000101211018     A*%%RS+<record-sequences>
+000102211018     A*%%RS+ <sequence name="Untitled">
+000103211018     A*%%RS+  <device type="display" width="80" height="24" />
+000104211018     A*%%RS+ </sequence>
+000105211018     A*%%RS </record-sequences>

@@ -1,0 +1,45 @@
+000001190304     A          R HEADING
+000002190304     A                                  2 49'S A L E S S T A F F   U P D A T E'
+000003190304     A                                  2  2DATE
+000004190304     A                                      EDTCDE(Y)
+000005190304     A                                  2125PAGNBR
+000006190304     A                                  2117'Page:'
+000007211111     A                                  2 18'Matin Hosseini Pour'
+000008190304     A                                  4  2'Code'
+000009190304     A                                  4  8'Dept'
+000010190304     A                                  4 15'Emp ID'
+000011190304     A                                  4 24'First Name'
+000012190304     A                                  4 46'Last Name'
+000013190304     A                                  4 69'City'
+000014190304     A                                  4 90'Address'
+000015190304     A                                  4115'Phone'
+000016190304     A                                  4125'Postal'
+000017190304     A                                  5125'Code'
+000018190304     A          R DETAIL                    SPACEB(1)
+000019190304     A            TCODE     R              3SPACEB(1)
+000020190304     A                                      REFFLD(SALESTRANS/TCODE BCI433LIB/S-
+000021190304     A                                      ALESTRANS)
+000022190304     A            TDEPT     R              8REFFLD(SALESTRANS/TDEPT BCI433LIB/S-
+000023190304     A                                      ALESTRANS)
+000025190304     A            TSALESID  R             15REFFLD(SALESTRANS/TSALESID +
+000026190304     A                                      BCI433LIB/SALESTRANS)
+000028190304     A            TFNAME    R             24REFFLD(SALESTRANS/TFNAME +
+000029190304     A                                      BCI433LIB/SALESTRANS)
+000031190304     A            TLNAME    R             46REFFLD(SALESTRANS/TLNAME +
+000032190304     A                                      BCI433LIB/SALESTRANS)
+000034190304     A            TCITY     R             69REFFLD(SALESTRANS/TCITY BCI433LIB/S-
+000035190304     A                                      ALESTRANS)
+000036190304     A            TADDRESS  R             90REFFLD(SALESTRANS/TADDRESS +
+000037190304     A                                      BCI433LIB/SALESTRANS)
+000038190304     A            TPHONE    R            113REFFLD(SALESTRANS/TPHONE +
+000039190304     A                                      BCI433LIB/SALESTRANS)
+000041190304     A            TPCODE    R            125REFFLD(SALESTRANS/TPCODE +
+000042190304     A                                      BCI433LIB/SALESTRANS)
+000100
+000101190304     A*%%RS+<record-sequences>
+000102190304     A*%%RS+ <sequence name="Untitled">
+000103190304     A*%%RS+  <device type="printer" width="132" height="66" />
+000104190304     A*%%RS+  <record-write record-format="HEADING" />
+000105190304     A*%%RS+  <record-write record-format="DETAIL" />
+000106190304     A*%%RS+ </sequence>
+000107190304     A*%%RS </record-sequences>

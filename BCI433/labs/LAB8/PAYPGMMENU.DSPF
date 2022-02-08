@@ -1,0 +1,14 @@
+000001211213     A          R RECORD1                   CF03(03 'QUIT ON F3')
+000003211213     A                                  1  4USER
+000004211213     A                                  2  4'MATIN HOSSEINI POUR'
+000005211213     A                                  1 32'EMPLOYEE PAYROLL'
+000006211213     A                                  1 70DATE
+000007211213     A                                      EDTCDE(Y)
+000008211213     A                                  4 32'1. DAY SHIFT'
+000009211213     A                                  5 32'2. AFTERNOON SHIFT'
+000010211213     A                                  6 32'3. NIGHT SHIFT'
+000011211213     A                                  7 32'4. ALL SHIFTS'
+000012211213     A                                  9 23'SELECTION: '
+000013211213     A            INPUT          1   B  9 38
+000014211213     A                                 14  9'F3 - EXIT'
+000100

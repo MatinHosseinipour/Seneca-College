@@ -1,0 +1,65 @@
+000100200709     A          R NEWPAGE
+000200190313     A                                  2  6'User:'
+000300190313     A                                  1  1'Timestamp:'
+000400190313     A                                  3  3'Server:'
+000500190313     A                                  1105'Page:'
+000600190313     A                                  1112PAGNBR
+000700190313     A            TIMESTAMP       Z     1 12
+000800190313     A            USER          10      2 12
+000900190313     A            SERVER        10      3 12
+001000190313     A                                  2 48'P H O N E   L O G   R E P O R T'
+001100211104     A                                  5 12'Sales'
+001200211104     A                                  6 13'ID'
+001300211104     A                                  5  2'Customer'
+001400211104     A                                  5 24'Customer Name'
+001500211104     A                                  6  3'Number'
+001600211104     A                                  6 70'Called'
+001700211104     A                                  5 54'Telephone'
+001800211104     A                                  5 69'Last Date'
+001900211104     A                                  5 83'Oldest Call'
+002000211104     A                                  6 86'Date'
+002100211104     A                                  5 97'Next Call'
+002200211104     A                                  6100'Date'
+002300190314     A                                  7131'*'
+002400211103     A          R RPTLINE                   SPACEB(1)
+002500211104     A            CSTNUM    R    5  0      3REFFLD(CUSTOMER21/CSTNUM +
+002600211104     A                                      BCI433LIB/CUSTOMER21)
+002700211114     A            SLSNUM    R             12REFFLD(CONTACTF21/SLSNUM +
+002800211103     A                                      BCI433LIB/CONTACTF21)
+002801211114     A                                      EDTCDE(J)
+002900211104     A            CSTNAM    R             19REFFLD(CUSTOMER21/CSTNAM +
+003000211103     A                                      BCI433LIB/CUSTOMER21)
+003100211104     A            TELEPHONE R             52REFFLD(CONTACTF21/TELEPHONE +
+003200211103     A                                      BCI433LIB/CONTACTF21)
+003300211103     A                                      EDTWRD('0(   )&   -    ')
+003400211104     A            PHNLDC    R             69REFFLD(CONTACTF21/PHNLDC +
+003500211103     A                                      BCI433LIB/CONTACTF21)
+003600211104     A            HIGHLIGHT      8        85
+003700211104     A            NEXTCDATE       L       98
+003800211104     A            ERRORMSG      15       112
+003900190313     A          R SUMMARY                   SPACEB(3)
+004000190313     A                                    12'S U M M A R Y   I N F O R M A T I -
+004100190313     A                                      O N'
+004200211104     A                                     2'CONTACTF21 Total Records:'
+004300190313     A                                      SPACEB(2)
+004400190313     A            CONTACTT       5  0     27EDTCDE(1)
+004500190313     A                                    44'Oldest Last Callback Date:'
+004600200709     A            OLDESTDATE      L       71
+004700211103     A                                     2'CUSTOMER21 Total Records:'
+004800190313     A                                      SPACEB(1)
+004900190313     A            CUSTOMERT      5  0     27EDTCDE(1)
+005000190313     A                                    39'Most Recent Last Callback Date:'
+005100200709     A            MOSTRECENT      L       71
+005200190313     A                                     2'Total Records with an Unknown Last-
+005300190313     A                                       Callback Date:'
+005400190313     A                                      SPACEB(2)
+005500190313     A            UNKNOWNT       5  0     52EDTCDE(1)
+005600000000
+005700211103     A*%%RS+<record-sequences>
+005800211103     A*%%RS+ <sequence name="Untitled">
+005900211103     A*%%RS+  <device type="printer" width="132" height="66" />
+006000211103     A*%%RS+  <record-write record-format="NEWPAGE" />
+006100211103     A*%%RS+  <record-write record-format="RPTLINE" />
+006200211103     A*%%RS+  <record-write record-format="SUMMARY" />
+006300211103     A*%%RS+ </sequence>
+006400211103     A*%%RS </record-sequences>

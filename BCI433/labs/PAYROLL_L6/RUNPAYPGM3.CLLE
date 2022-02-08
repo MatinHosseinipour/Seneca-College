@@ -1,0 +1,62 @@
+000100211111
+000101211111             PGM
+000102211111             DCL        &Shift       *CHAR 1
+000103211111             DCL        &ShiftType   *CHAR 30
+000104211111             DCL        &OutQ        *CHAR 10
+000105211111             DCL        &OutQLib     *CHAR 10
+000106211111
+000107211111             RTVUSRPRF  OUTQ(&OUTQ) OUTQLIB(&OUTQLIB)
+000108211111
+000109211111             CLROUTQ    &OUTQLIB/&OUTQ
+000110211111             ADDLIBLE   SENECAPAY
+000111211111             MONMSG     MSGID(CPF0000)
+000112211111
+000113211111             SNDUSRMSG  MSG('1 - Day Shift, 2 - Afternoon Shift, 3 - Night Shift, 4 - All +
+000114211111                          Shifts, 5 - EXIT') MSGRPY(&SHIFT)
+000115211111
+000116211111             DOWHILE    (&SHIFT *NE '5')
+000117211111                SELECT
+000118211111                   WHEN       (&SHIFT = '1') DO
+000119211111                      CHGVAR     &SHIFTTYPE  'D A Y   S H I F T'
+000120211111                      OVRPRTF    FILE(PAYRPT2) SPLFNAME(DAYSHIFT)
+000121211111                      OVRDBF     SHIFTWEEK DAYS
+000122211111                      CALLPRC    PAYROLLPG3 PARM(&SHIFTTYPE)
+000123211111                      DSPSPLF    FILE(DAYSHIFT) SPLNBR(*LAST)
+000124211111                   ENDDO
+000125211111
+000126211111                   WHEN       (&SHIFT = '2') DO
+000127211111                      CHGVAR     &SHIFTTYPE  'A F T E R N O O N   S H I F T'
+000128211111                      OVRPRTF    FILE(PAYRPT2) SPLFNAME(AFTERSHIFT)
+000129211111                      OVRDBF     SHIFTWEEK AFTERS
+000130211111                      CALLPRC    PAYROLLPG3 PARM(&SHIFTTYPE)
+000131211111                      DSPSPLF    FILE(AFTERSHIFT) SPLNBR(*LAST)
+000132211111                   ENDDO
+000133211111
+000134211111                   WHEN       (&SHIFT = '3') DO
+000135211111                      CHGVAR     &SHIFTTYPE  'N I G H T   S H I F T'
+000136211111                      OVRPRTF    FILE(PAYRPT2) SPLFNAME(NIGHTSHIFT)
+000137211111                      OVRDBF     SHIFTWEEK NIGHTS
+000138211111                      CALLPRC    PAYROLLPG3 PARM(&SHIFTTYPE)
+000139211111                      DSPSPLF    FILE(NIGHTSHIFT) SPLNBR(*LAST)
+000140211111                   ENDDO
+000141211111
+000142211111                   WHEN       (&SHIFT = '4') DO
+000143211111                      CHGVAR     &SHIFTTYPE  'A L L    S H I F T S'
+000144211111                      OVRPRTF    FILE(PAYRPT2) OVRFLW(25) SPLFNAME(ALLSHIFT)
+000145211111                      OVRDBF     SHIFTWEEK ALLSHIFT
+000146211111                      CALLPRC    PAYROLLPG3 PARM(&SHIFTTYPE)
+000147211111                      DSPSPLF    FILE(ALLSHIFT) SPLNBR(*LAST)
+000148211111                   ENDDO
+000149211111
+000150211111                   WHEN       (&SHIFT *NE '5') DO
+000151211111                      SNDUSRMSG  MSG(&SHIFT *CAT ' IS AN INVALID SELECTION. PRESS ENTRY KEY')
+000152211111                   ENDDO
+000153211111                ENDSELECT
+000154211111
+000155211111                SNDUSRMSG  MSG('1 - Day Shift, 2 - Afternoon Shift, 3 - Night Shift, 4 - All +
+000156211111                             Shifts, 5 - EXIT') MSGRPY(&SHIFT)
+000157211111             ENDDO
+000158211111             SNDPGMMSG  MSG('Okay to clear out an output queue in school - But never at work +
+000159211111                          in production')
+000160211111             WRKOUTQ    &OUTQLIB/&OUTQ
+000161211111             ENDPGM

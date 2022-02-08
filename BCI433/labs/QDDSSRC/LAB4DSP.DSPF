@@ -1,0 +1,31 @@
+000010210201     A*%%TS  SD  20210201  151602  PANGBORN    REL-V7R4M0  5770-WDS
+000020210201     A*%%EC
+000030210201     A                                      DSPSIZ(24 80 *DS3)
+000040210201     A          R RECORD1
+000050210201     A*%%TS  SD  20210201  151602  PANGBORN    REL-V7R4M0  5770-WDS
+000053211018     A                                      CF03(03)
+000054211018     A                                      CF21(21)
+000060210201     A                                  1 38'Lab 4'
+000070210201     A                                  5  3'Please select one of the following-
+000080210201     A                                       options:'
+000090210201     A                                  9 14'3.  Maximum Invalid Signon Attempt-
+000100210201     A                                      s allowed'
+000110210201     A                                 11 14'5.  Operating system level'
+000120210201     A                                  7 14'1.  Signed on User''s Message Queu-
+000130210201     A                                      e'
+000140210201     A                                 15 17'Option:'
+000150210201     A                                 23  4'F3=Exit'
+000160210201     A                                 23 17'F21=Comand Line '
+000170211018     A                                  2  3'Matin Hosseini Pour'
+000180210201     A                                 10 14'4.  Previous sign on by signed on -
+000190210201     A                                      user'
+000200210927     A                                  8 14'2.  Run Car Insurance Application'
+000201211018     A                                  1 70DATE
+000202211018     A                                      EDTCDE(Y)
+000203211018     A                                  2 70TIME
+000204211018     A            OPTIONIN       2   B 15 27
+000205211018     A  99                                  DSPATR(RI PC)
+000206211018     A  99                             15 45'Invalid Input'
+000207211018     A                                      DSPATR(RI)
+000208211018     A            MSGTXT1       70   O 18  6
+000209211018     A            MSGTXT2       70   O 19  6

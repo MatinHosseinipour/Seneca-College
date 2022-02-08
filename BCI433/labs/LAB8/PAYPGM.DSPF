@@ -1,0 +1,51 @@
+000001211213     A          R SFLDATA                   SFL
+000002211213     A            EMPNUM    R        O  9  5REFFLD(SHIFTWEEK/EMPNUM SENECAPAY/S-
+000003211213     A                                      HIFTWEEK)
+000004211213     A            WORKSHIFT R        O  9 19REFFLD(SHIFTWEEK/WORKSHIFT +
+000005211213     A                                      SENECAPAY/SHIFTWEEK)
+000006211213     A            PAYCLASS  R        O  9 27REFFLD(SHIFTWEEK/PAYCLASS +
+000007211213     A                                      SENECAPAY/SHIFTWEEK)
+000008211213     A            HRSWORKED R        O  9 33REFFLD(SHIFTWEEK/HRSWORKED +
+000009211213     A                                      SENECAPAY/SHIFTWEEK)
+000011211213     A            OVERPAY2       7  2O  9 48EDTCDE(1)
+000012211213     A            REGPAY2        7  2   9 59EDTCDE(1)
+000013211213     A            WEEKPAY2       7  2   9 70EDTCDE(1)
+000014211213     A            HRLY           5  2O  9 40EDTCDE(1)
+000015211213     A          R SFLCTL                    SFLCTL(SFLDATA)
+000016211213     A  50                                  SFLDSPCTL
+000017211213     A  50                                  SFLDSP
+000018211213     A                                      SFLPAG(10)
+000019211213     A                                      SFLSIZ(100)
+000020211213     A  50                                  SFLEND(*MORE)
+000021211213     A N50                                  SFLCLR
+000022211213     A                                  1 71DATE
+000023211213     A                                      EDTCDE(Y)
+000024211213     A                                  1 25'C O M P A N Y   P A Y R O L L'
+000025211213     A            SHIFT         23   O  3  4
+000026211213     A                                  3 47'Total Regular Pay:'
+000027211213     A                                  4 46'Total Overtime Pay:'
+000028211213     A                                  5 48'Total Weekly Pay:'
+000029211213     A            OVERPAY        9Y 2O  4 67EDTCDE(1)
+000030211213     A            REGPAY         9Y 2   3 67EDTCDE(1)
+000031211213     A            WEEKPAY        9Y 2   5 67EDTCDE(1)
+000032211213     A                                  7  5'Employee'
+000033211213     A                                  8 17'Shift'
+000034211213     A                                  8 25'Class'
+000035211213     A                                  8  7'Num'
+000036211213     A                                  7 17'Work'
+000037211213     A                                  7 25'Pay'
+000038211213     A                                  7 32'Hours'
+000039211213     A                                  7 39'Hourly'
+000040211213     A                                  8 40'Rate'
+000041211213     A                                  7 49'Overtime'
+000042211213     A                                  8 51'Pay'
+000043211213     A                                  7 60'Regular'
+000044211213     A                                  7 71'Total'
+000045211213     A                                  8 61'Pay'
+000046211213     A                                  8 72'Pay'
+000100
+000101211213     A*%%RS+<record-sequences>
+000102211213     A*%%RS+ <sequence name="Untitled">
+000103211213     A*%%RS+  <device type="display" width="80" height="24" />
+000104211213     A*%%RS+ </sequence>
+000105211213     A*%%RS </record-sequences>

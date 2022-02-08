@@ -1,0 +1,20 @@
+000100200726     A                                      DSPSIZ(24 80 *DS3)
+000200200726     A                                      INDARA
+000300200726     A                                      CF03(03)
+000400200726     A          R INPUT
+000500200726     A                                  8 12'Ente Day Number: '
+000600200726     A            DAYIN          1Y 0B  8 31
+000700200726     A  99                                  DSPATR(PR)
+000800200726     A                                      EDTCDE(4)
+000900200726     A                                  1  2USER
+001000211209     A                                  3  2'Matin Hosseini Pour'
+001100200726     A                                  1 21'U S E R   D E F I N E D   F U N C -
+001200200726     A                                      T I O N'
+001300200726     A                                  1 69DATE
+001400200726     A                                      EDTCDE(Y)
+001500200726     A            SOLUTION      15   O  8 40
+001600200404     A          R OUTPUT
+001700200404     A                                      OVERLAY
+001800200404     A                                 14 11'Day Name: '
+001900200404     A            DAYNAME        9A  O 14 24
+002000200404     A                                 22  7'F3 - Exit'

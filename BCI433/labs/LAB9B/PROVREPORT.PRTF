@@ -1,0 +1,44 @@
+000100211104     A          R STARTOFRPT
+000200211104     A                                  2 39'C u s t o m e r s  >='
+000300190314     A            LOWLIMIT       7  2   2 60EDTCDE(1 $)
+000400211104     A          R COLHEADING                SPACEB(2)
+000500190313     A                                     4'Province'
+000600190313     A                                    19'Customer ID'
+000700190313     A                                    36' Full Name'
+000800190313     A                                    62'City'
+000900190313     A                                    83'Purchase'
+001000190313     A                                   100'Purchase'
+001100190313     A                                    84'Amount'
+001200190313     A                                      SPACEB(1)
+001300190313     A                                   102'Date'
+001400190313     A          R NEWPROV                   SPACEB(1)
+001500190313     A            PROVINCE      10         3
+001600211104     A          R CUSTDETAIL
+001700190313     A            CUSTID    R             20
+001800190313     A                                      REFFLD(ONTARIO/CUSTID BCI433LIB/ONT-
+001900190313     A                                      ARIO)
+002000190313     A                                      SPACEB(1)
+002100190313     A            FULLNAME      31        28
+002200190313     A            CITY      R             60REFFLD(ONTARIO/CITY BCI433LIB/ONTAR-
+002300190313     A                                      IO)
+002400190313     A            PURCHASE  R             83REFFLD(ONTARIO/PURCHASE BCI433LIB/O-
+002500190313     A                                      NTARIO)
+002600190313     A                                      EDTCDE(1)
+002700190313     A            PDATE     R             99
+002800190313     A                                      REFFLD(ONTARIO/PDATE BCI433LIB/ONTA-
+002900190313     A                                      RIO)
+003000211104     A          R LESSTHAN                  SPACEB(2)
+003100211104     A                                    46'C u s t o m e r s   <'
+003200190314     A            LOWLIMIT       7  2     70EDTCDE(1 $)
+003300190313     A                                     6'Ontario'
+003400190313     A                                      SPACEB(2)
+003500190313     A                                    23'Quebec'
+003600190313     A                                    39'Manitoba'
+003700190314     A            ONTTOTAL       3  0      8SPACEB(2)
+003800190314     A                                      EDTCDE(1)
+003900190314     A            QUETOTAL       3  0     24EDTCDE(1)
+004000190314     A            MANTOTAL       3  0     40EDTCDE(1)
+004100211104     A          R TOTALPURCH                SPACEB(2)
+004200190313     A                                    67'Total Amount:'
+004300211104     A            TOTALAMT       8  2     82EDTCDE(1 $)
+004400000000
