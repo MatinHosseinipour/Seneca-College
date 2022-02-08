@@ -1,0 +1,88 @@
+html body {
+    background-image: linear-gradient(to right, rgba(34,34,34,0.9), rgba(34,34,34,1));
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar-default {
+    background-image: linear-gradient(to right, rgba(49,66,87,0.9), rgba(49,66,87,1));
+    border: 0px;
+    
+}
+
+.navbar-default .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+    cursor: auto;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #263544;
+    color: white;
+}
+
+  .navbar-default .navbar-nav > .active > a, 
+  .navbar-default .navbar-nav > .active > a:hover, 
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background: #ad5c28;
+  }
+
+article {
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+    color: #fff;
+}
+
+article h2 {
+    background-color:  #404f62;
+    padding: 2%;
+    vertical-align: center;
+    color: white;
+    border-radius: 5px;
+}    
+
+
+.row  aside {
+    border: 0px auto;
+    border-radius: 5px;
+    background-color:  #404f62;
+    color: white;
+}
+
+.row {
+    color: #fff;
+}
+
+
+.m-form, legend{
+    background-color: #404f62;
+    color: #fff;
+    border: solid 3px white;
+}
+
+
+.btn {
+    background: #ad5c28;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color:  #263544;
+
+}
+
+th,td {
+    text-align: center;
+}

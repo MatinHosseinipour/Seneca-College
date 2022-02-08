@@ -1,0 +1,27 @@
+body{
+    background: rgba(192,192,192,0.5);
+}
+.col-md-9{
+    border-left: solid black 1px;
+
+}
+.nav li:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.navbar-header span:hover{
+    color: #696969;
+}
+.navbar-default{
+    background-color: rgb(4, 4, 71);
+    border-color: black;
+    border-radius: 0;
+}
+.navbar-brand{
+    color: rgba(255,255,255,0.7)!important;
+}
+.active > a{
+    background-color: rgba(0,0,0,0.4)!important;
+}
+.navbar-nav > li > a{
+    color: #fff!important;
+}

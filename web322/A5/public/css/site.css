@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.hide {
+    display: none;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.navbar {
+    background-color:black;
+    border-radius: 0px;
+    border: 0px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav {
+    color: white;
+}
+.navbar-brand {
+    font-size: 26px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #CED4DA;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: black;
+    background-color: white;
+}
+
+html, body {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+}
+
+.btn-success, .btn-primary {
+    background-color: #3D5A80;
+    border-color: #3D5A80;
+    border-radius: 3px;
+}
+
+.btn-success:hover, .btn-primary:hover {
+    background-color: #002855;
+    border-color: #002855;
+}
+
+.btn-danger {
+    border-radius: 3px;
+}
+.btn-danger>a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-danger:hover {
+    background-color: #a4161a;
+    border-color: #a4161a;
+}
+
+a {
+    color: #3D5A80;
+}

@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Employees</h2>
+        <hr />
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Employee&nbsp;Num</th>
+                <th>Full&nbsp;Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Manager&nbsp;ID</th>
+                <th>Status</th>
+                <th>Department</th>
+                <th>Hired&nbsp;On</th>
+            </tr>
+            </thead>
+            <tbody>
+
+        {{#each employees}}
+            <tr>
+                <th>{{employeeNum}}</th>
+                <th><a href="/employee/{{employeeNum}}">{{firstName}} {{lastName}}</a></th>
+                <th><a href="mailto:{{email}}">{{email}}</a></th>
+                <th>{{addressStreet}}, {{addressCity}}, {{addressState}}, {{addressPostal}}</th>
+                <th><a href="/employees?manager={{employeeManagerNum}}">{{employeeManagerNum}}</a></th>
+                <th><a href="/employees?status={{status}}">{{status}}</a></th>
+                <th><a href="/employees?department={{department}}">{{department}}</a></th>
+                <th>{{hireDate}}</th>
+            </tr>
+        {{else}}
+                <p>no results</p>
+        {{/each}}
+        </tbody>
+        </table>
+    </div>
+    {{#unless employees}}
+    <div class="col-md-12 text-center">
+            <strong>{{message}}</strong>
+    </div>
+    {{/unless}}
+</div>
