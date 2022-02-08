@@ -1,0 +1,118 @@
+#include <iostream>
+#include <iomanip> workshop 6 car.cpp
+#include <fstream>
+#include <string>
+#include <vector>
+#include <regex>
+
+---------------------------------------------------------------------------COPY
+Test (const Test &src); -------------------------------------------------------------------------------------------------Header
+
+Test(const Test &src) 
+    { 
+        value = src.value;
+    } 
+
+---------------------------------------------------------------------------Calling COPY
+Test t3 = t1;
+Test t3(t1);
+---------------------------------------------------------------------------Assignment
+Test& operator = (const Test &src); ------------------------------------------------------------------------------------Header
+Test& operator = (const Test &src)
+    {
+        if (this != & src){
+	value = src.value;
+         }
+       return *this;
+    } 
+
+---------------------------------------------------------------------------Calling Assignment
+t2 = t1;
+t2.operator=(t1);
+---------------------------------------------------------------------------Move
+ Test ( Test && src); ----------------------------------------------------------------------------------------------------Header
+Test (Test && src){
+	value1 = src.value1;
+	value2 = src.value2;
+
+	src.value1 = nullptr;
+	src.value2 = 0;
+---------------------------------------------------------------------------Calling Move
+Test t1(std::move(t2));
+---------------------------------------------------------------------------Move Assignment
+Test& operator=(Test && src); ------------------------------------------------------------------------------------------Header
+Test& operator=(Test && src)
+{
+if (this != &src)
+{
+	delete[] value1;
+	value1 = src.value1;
+	value2 = src.value2;
+
+	src.value1 = nullptr;
+	src.value2 = 0;
+}
+         return *this;
+}
+---------------------------------------------------------------------------Calling Move Assignment
+t1 = std::move(t2);
+---------------------------------------------------------------------------Operator +=
+Test& operator+=(const Test& item) {
+size ++;
+pointer temp = new pointer[size];
+for (i = 0; i < size - 1; i++) {
+temp[i] = org_pointer[i];
+}
+delete[] org_pointer;
+org_pointer = nullptr;
+org_pointer = new pointer[size];
+for (i = 0; i < size - 1; ++i) {
+org_pointer[i] = temp[i];
+}
+org_pointer[size - 1] = item;
+}
+return *this;
+---------------------------------------------------------------------------Calling Operator +=
+t1 += t2;
+---------------------------------------------------------------------------dealocating dynamic pointer
+int * p;
+ p= new  int[5];
+delete[] p;
+---------------------------------------------------------------------------friend helper for ostream
+friend std::ostream& operator<<(std::ostream& os, const Test & src); ----------------------------------------------------Header
+ostream& operator<<(ostream& os, const Test &src){
+      return os;
+}
+---------------------------------------------------------------------------Space Remover and double check
+string spaceRemover(string input)
+{
+for (size_t i = 0; i < input.length(); i++)
+{
+if (input[0] == ' ')
+{
+input.erase(0, 1);
+}
+}
+return input;
+}
+------------------------
+string doubleCheck(string input)
+{
+std::regex pattern(" ,");
+for(size_t i = 0; i < input.length(); i++){
+input = std::regex_replace(input, pattern, ",");
+}
+return input;
+}
+---------------------------------------------------------------------------Observer
+--------------------------------------------------------------------------------------------------------------------------To be defined in the private section of the class
+void (*c_observer)(const ClassName<T>&, const T&);
+---------------------------------------------------------------------------Set Observer
+void setObserver(void (*observer)(const  ClassName<T>&, const T&)) {
+c_observer = observer;
+}
+---------------------------------------------------------------------------Calling Observer
+if (c_observer)
+{
+c_observer(*this, INPUT);
+}

@@ -1,0 +1,18 @@
+// Workshop 5
+// reflect
+// Matin Hosseini Pour
+// 151267192
+// smmhosseini-pour
+//Feb 21st, 2021
+
+the new stuff that i was working with in this workshop was the try catch, the lambda expression and the observer
+although observer was pretty easy it was pretty interesting as well to watch how it does the job.
+the use of functor and lambda are kinda. functor edits the input while lambda uses the some inputs to change the other inputs
+i guess when we want may change some of the parameters we should use the functor and when we are sure we want some of them constant
+we better use lambda
+client giving a wrong file name in my opinion is better to be catched by the exceptions to let the client know what is wrong
+i would prefer having the exception but i would let the client to enter the file name one more time just in case if he did a typo he can fix that
+like what we did for the spellchecking i would make a module to load the data fix the spaces and trim it, then i would send them to their constructor
+and they just have to set the data.
+the default constructor is indeed necessary, because we didnt pass the data directly doesnt mean data doesnt go there indirectly, which it does
+basically their constructors would be overloaded and our data will go where it has to

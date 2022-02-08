@@ -1,0 +1,13 @@
+// Workshop 2
+// TimedEvents.cpp
+// Matin Hosseini Pour
+// 151267192
+// smmhosseini-pour
+//Jan 30th, 2021
+
+
+
+well been a long time and we fixed the problem together. i didnt have to make the struct static since it is default static and it was the debugging error
+that did not allow me to submit on time. and i believe the purpose of the workshop was to work with the <chrono> (timing) in programming in order to 
+compare different methods to be able and write the most sufficient code
+but thanks to you for the extension

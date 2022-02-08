@@ -1,0 +1,15 @@
+// Name:		Matin Hosseini Pour
+// Seneca Student ID: 	151267192
+// Seneca email:	smmhosseini-pour@myseneca.ca
+// Date of completion: April 11th, 2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
+well the purpose of porjects for sure are to demonstrate the stuff we have learnt so far. to reuse them even more and put them all together and make sure we have learnt them
+flawlessly, and also be more prepared for the real jobs. 
+well for this project i have tried to use different methods and types as much as possible to ensure i dont have any problem in that
+but something that is more seen that others stuff in the project are the inheritance and move constructors. 
+to be honest nothing left to say, everything been said before in the workshops.
+but it was a good exercise like before to get in use everything what we learnt
+i was hoping there were some question so i could answer them to be more percise.

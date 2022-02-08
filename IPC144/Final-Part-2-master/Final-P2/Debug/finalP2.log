@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\matin\Desktop\IPC\Final-Part-2-master\Final-P2\main.c(52,1): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  finalP2.vcxproj -> C:\Users\matin\Desktop\IPC\Final-Part-2-master\Final-P2\Debug\finalP2.exe

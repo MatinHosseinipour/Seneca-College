@@ -1,0 +1,16 @@
+// Workshop 9: DIY - Reflection
+// Date: 11/27/2020
+// Author: Matin Hosseini Pour
+// Email: smmhosseini-pour@myseneca.ca
+// SenID: 151267192
+/////////////////////////////////////////////
+
+lets start with a missunderstanding that i had on this workshop. its been said that using collection template
+write a function so i thought the prototype should be the collection, and after some time thinking about
+how is it possible for a collection function to return either true or false, i finnaly decided to change it 
+to a bool function LOL. alright the purpose of this short workshop was to work with templates, which is 
+really usefull, like you gave us an example of adding two variables together, we can avoid writing many
+simillar functions by substituting the template with identifiers (double,int or whatever). this one was pretty
+easy and to be honest really short that made me thinking something really difficult should be coming for the
+workshop 10 and i should be ready for it. last but not least, thank you for giving such easy and short workshops
+:D

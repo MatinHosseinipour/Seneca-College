@@ -1,0 +1,20 @@
+// Workshop 3
+// reflect
+// Matin Hosseini Pour
+// 151267192
+// smmhosseini-pour
+//Feb 7th, 2021
+
+
+first of we do not make cpp files and we code in the header files because when we use templates we should write the code
+within our header file we cannot code for the templates typename in the cpp
+secondly we used initial in our constructor just in case if the input was missing we have a default value for our variable type 
+V
+thirdly, we had to specialize the the operator because we wanna do something different with the string rather than other
+types.
+we dont need to specialiaze initial variable because the null is basically the same for all the variables so we dont really need
+to specialize that while we can use {}
+forth, because we made them static we had to define them outside the class as well to let the compiler know that these statics
+belong to those classes
+not to mention that i had to specialize the class for int string while it was not mentioned because i was getting an error saying
+the class would not work for the input int string 

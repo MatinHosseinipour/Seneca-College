@@ -1,0 +1,19 @@
+// Workshop 6
+// reflect
+// Matin Hosseini Pour
+// 151267192
+// smmhosseini-pour
+//March 13th, 2021
+
+1. because it is still dynamically allocated, thus we have to deallocate them in order to save memory
+2.load data makes it much easier for us. because we load the whole line into a string variable we check the variable and then pass the
+variable to the specific function without losing any data on it or we just ignore it at one place
+we dont have to check some parts somewhere then return and so on (thats my opinion)
+3. we could use but we had to copy each time and deallocate each time again and again. in this case we only used one object and we deallocated one object as well
+so we avoided repeating codes and also used less memory
+to mention some of the difficulties i had in this workshop was using the istream instead of loading file, it was an absolute headache to be honest
+i had to ask one of my relatives who codes cpp for his idea, he said the same thing. why should we load some part of the code and then pass the rest and load them
+there when we can just load them all at once and pass a string somewhere instead of loading, extracting and passing the rest as an istream?
+therefore as i couldnt find any solution for the car constructor to just load untill the speed and keep the booster in the istread so i could extract it from racecar
+constructor, i saved the booster in car as well and then i just loaded it into the racecar from car class. nothing else was new rather than the vector and list which
+is to be honest way easier than using regular arrays. but it is always good to code older subjects such as exceptions and lambda to make sure we fully understood it

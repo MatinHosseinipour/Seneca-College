@@ -1,0 +1,26 @@
+// Workshop 8
+// reflect
+// Matin Hosseini Pour
+// 151267192
+// smmhosseini-pour
+//March 26th, 2021
+
+The purpose of this workshop was to work and pointers to understand their concept deeply
+Here i have used delete operator in order to use raw pointers.
+"
+    Product *temp = new Product(desc[i].desc, price[j].price);
+	temp->validate();
+    priceList += temp;
+    delete temp;
+"
+in the example as it is obvious i have deleted the pointer right away to avoid memory leak in order to obtimize the program
+To mention a difference between raw and smart pointers we can say sometimes that we might forget to deallocate we will use
+smart pointers to make sure they will be deallocated automatically.
+
+on some other part of the code i also used the smart pointer as i mentioned bellow
+"
+    std::shared_ptr<Product> temp(new Product(desc[i].desc, price[j].price));
+    temp->validate();
+    priceList += temp;
+"
+as it is obvious there was no need of deallocation since we would not have any memory leak.

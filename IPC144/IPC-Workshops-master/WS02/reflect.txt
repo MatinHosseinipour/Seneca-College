@@ -1,0 +1,22 @@
+//==============================================
+// Name:           Matin Hosseini Pour
+// Student Number: 151267192
+// Email:          smmhosseini-pour@myseneca.ca
+// Section:        NJJ
+// Workshop:       2 (at-home)
+//==============================================
+
+	If I say week 02 assignment was a little challanging, I did not exaggerate. Especially when we are working 
+with a various of formulas, you know by making even a small mistake the whole program will go wrong. In Addition, "scanf" 
+was a new command that i have learnt in C language, it is one of the important commands in C which comes with different 
+input types (e.g. %d,%f,%1f). There may not be any differnce between some of the input types at the first look, but in action 
+there actually is a huge gap between them. For instance, %f and %1f may look same and even if you use them instead of eachother 
+you will not get any error but truth is one of them is for float and the other is for double and by entering different numbers 
+you will have a problem there. Moreover, I have learnt that we as a programmer can limit the user in different situations. 
+Like when we are asking the user to enter a number as the amount to be paid, we can limit the length of the amount (decimals 
+in this case) by adding 0.2 or.2 in between defining the input type (%0.2f or %.2f).
+	Although, I have learnt that in C language, the computer never does round the numbers. It always truncates the 
+numbers. Though, the solution of this problem is you always add 5 to the last digit of our numbers and then when computer 
+truncates, it technically rounds the number.
+
+	P.S. I had to use float and %f for my assignments, because otherwise I would always get and error in matrix.

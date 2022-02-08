@@ -1,0 +1,4 @@
+﻿  Car.cpp
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\OOP-Workshops-master\WS06\w06\w06\Car.cpp(60,23): warning C4101: 'e': unreferenced local variable
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\OOP-Workshops-master\WS06\w06\w06\Car.cpp(72,23): warning C4101: 'e': unreferenced local variable
+  w06.vcxproj -> C:\Users\matin\Desktop\seneca cpa\sem3\oop345\OOP-Workshops-master\WS06\w06\Debug\w06.exe

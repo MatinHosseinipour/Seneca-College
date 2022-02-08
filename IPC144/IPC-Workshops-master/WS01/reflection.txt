@@ -1,0 +1,4 @@
+By doing this homework  I have learnt that there are many different ways to finish a task
+For instance, for this one I could either write three different printf commands or write one and add two \n to it
+also I have realized that I can color the text, its background or even the whole console by different commands,
+unfortunately when I wanted to submit the work exactly as you wanted-(with yellow background) it kept giving me errors for my command \033 that I have used it for setting the color.

@@ -1,0 +1,14 @@
+In line number 7 of your output:
+The output should be:
+Premature draw call:
+^
+But your output is: 
+==43354== Conditional jump or move depends on uninitialised value(s)
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [P] ASCII code(80)
+but you printed
+  [=] ASCII code(61)
+

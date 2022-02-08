@@ -1,0 +1,16 @@
+Matin Hosseini Pour
+Jan 23rd 2021
+smmhosseini-pour@myseneca.ca
+151267192
+workshop 1
+
+im really happy that we started the course with this workshop
+it kinda included the parts from the previous course which made it to be a good warm up
+the difference between internal and external is that in interval you cannot use the
+interval on the other classes but when when you make it external like the g_sysclock
+which we have used it on other classes like our main.
+when you make it static it does not remove and create the variable everytime we use it
+everytime. for example the counter variable that by making it static we avoided reseting 
+the value.
+for the class event i had to make the char variable dynamic in order to avoid the maximum
+length and save some storage.

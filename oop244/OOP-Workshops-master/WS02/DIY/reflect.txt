@@ -1,0 +1,19 @@
+// Workshop 2: 
+// Version: 0.9
+// Date: 10/4/2020
+// By: Matin Hosseini Pour
+// Section: NJJ
+// Email: smmhosseini-pour@myseneca.ca
+// SenID: 151267192
+/////////////////////////////////////////////
+This workshop was pretty easy considering the last one.The purpose of the workshop was to get used to overloadings,
+refrences and dynamic memories allovation. We had plenty of overload functions which was a good exercise in order 
+to learn them. The lab part was harder than the diy, because basically only the subject had changed and all I had to
+do was to update the codes to change them from a basic school exam markings to bank account balances.
+one of the major problems i had was it diy which made me spend two hours on it. i first tried to code with
+class instead of struct because you said from now on we have to go by class but when i was reading datas,
+i would display bunch of nonesence numbers instead of the actual data, spending hours of debugging and
+changing everything, i changed that class to struct to go line by line by my lab part and at the end i thought
+it may help if i change "%d," with "%d%c*" and surprisingly problem solved but i did not have enough time to 
+change back the struct to class because it needed a lot of work for public functions in order to setting data
+into private parameters.

@@ -1,0 +1,12 @@
+// Workshop 8: DIY - Reflection
+// Date: 11/22/2020
+// Author: Matin Hosseini Pour
+// Email: smmhosseini-pour@myseneca.ca
+// SenID: 151267192
+/////////////////////////////////////////////
+
+its been told that the purpose of this workshop was to keep practising on inheriting classes. so basically
+i was ready to work with the classes, but again like previous workshops, it was a mix of old lectures. and
+by doing all these workshops so far, happily i dont make mistakes anymore. nothing else comes to my mind
+to be honest to write here. basically it was same as the old workshops and ive said mostly everything. so i 
+guess i better save some for next workshop as well :D.

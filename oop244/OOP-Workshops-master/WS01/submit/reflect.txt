@@ -1,0 +1,18 @@
+/* Name: Matin Hosseini Pour
+ Email: smmhosseini-pour@myseneca.ca
+ Student Number: 151267192
+ Section: NBB
+*/
+
+
+the DIY was pretty much like the lab part but easier, in other word doing the lab was the actual coding part, DIY was a little editing.
+before i forgot i have to confess that i was acting dumb because i guess i did not pay enough attention on your lectures that i didnt know
+we have lab at all, even though i have been looking for the instructions for the workshop for almost two days :/ no one could understand
+im really looking for the instruction an i cant just scroll down the git hub page to see what is there. although i know youve written that
+if we miss even one part you are going to give 0 mark for it, i thought it might be better to submit than not submitting at all.
+for the program as i said it was pretty much like the lab part, it had some identical part which i just coppied from the lab codes like the open,
+close, load, flush..., yes and some other functions that i couldnt use the exact same code so i just had to edit them to do the process i want, for 
+instance hasGenre function could be changed and be used as a search function in DIY. also it was easier than the lab because we were looking 
+for less fields in the file! 
+last but not least, i have used some confusing short names that i hope it would be alright.
+  

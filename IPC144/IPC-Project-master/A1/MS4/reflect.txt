@@ -1,0 +1,78 @@
+/* -------------------------------------------
+Name:   Matin Hosseini Pour
+Student number: 151267192
+Email:  smmhosseini-pour@myseneca.ca
+Section:    NJJ
+Date:   July 10th 2020
+----------------------------------------------
+Assignment: 1
+Milestone:  4
+---------------------------------------------- */
+
+
+First bug is regarding the middle initials, it also includes the last name which is not about cleaning the buffer,
+indeed is about not getting the right input based on our variable. the scanf code is seeking for an input with 6 
+characters length, while our variable has been set to 5 characters length so im gonna change that to 7 (one more than
+our need) and will try debugging it. and yup, this was the problem and is solved now
+
+the second bug is that while we get done with getting the name information and trying to move out of the getName function
+we get an error saying yesNo variable is corrupted. by checking the codes related to this variable, we will understand that
+the problem is that we are using %s while we try to scan a character to save into our variable which is completely wrong
+because it is for strings not characters, by changing it to %c our problem is solved
+
+the thirs bug is than when i enter yes to add my apartment number it skippes that part. it flawlessly gets the input from
+the user for example 'y' and stores it into the variable yesNo, but surprisingly it does not enter the if condition. and finnaly 
+found that the problem is that in our if condition we are using double quotation "" for our condition while checking the character
+which is wrong and has to be single quotation ''
+
+the fourth problem is that, while we are saying yes we want to add home cellphone number it skippes that part too. by taking a
+look at our code line 85 we will recognize that the problem is our if condition, while checking the input character we are checking
+if the input character is y and Y at the same time which does not make sense in the real world either. the condition has to be changed
+from && to ||
+
+-----------------------------------------------------------------
+
+our contact struct is based on three different structs. at first it may look like an over-coding, but it really helps us to organize 
+our code, by differentiating between the name information, address and numbers. in other hand, we are avoiding dirty coding by
+writing all of the in an organized way. basically when we make a contact struct, it automatically creates three different structs
+with different variables and inputs and stores all their addresses into itself.
+
+
+-------------------
+
+
+the repetition part of the contacts.c is regarding to the situations we are asking the user if he wants to add some extra information
+or not. in other words, every time we are asking the user to enter y or n we are repeating a same pattern and we can write that in a 
+seperate function which only return 0 or 1, which represents true or false;
+
+this can be our function
+
+int getYesNo() {
+    char yesNo;
+    scanf("%c%*c", &yesNo);
+    if (yesNo == 'y' || yesNo == 'Y') {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+
+and for example if i try to merge it in our first part which is asking about initials it would be like this
+
+printf("Do you want to enter a middle initial(s)? (y or n): ");
+    if (getYesNo()) {
+        printf("Please enter the contact's middle initial(s): ");
+        scanf("%6[^\n]%*c", name->middleInitial);
+    }
+
+---------------------------
+
+it basically means to ignore the next character such as space, slash, dash and etc.
+we need it here because we mostly have spaces in our inputs and we ought to ignore them in order 
+to store the write input in our variables
+
+-------------------------
+
+we mostly used %[^\n] instead of %s and that is because %[^\n] means read all the input in the buffer
+until \n occurs, which %s is not working like this and may cause corruption in getting our inputs correctly

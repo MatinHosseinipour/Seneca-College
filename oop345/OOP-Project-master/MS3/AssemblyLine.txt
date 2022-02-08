@@ -1,0 +1,7 @@
+CPU|GPU
+Memory|SSD
+Power Supply|CPU
+GPU|Memory
+WiFi
+SSD|Monitor
+Monitor|WiFi

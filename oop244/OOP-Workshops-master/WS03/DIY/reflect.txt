@@ -1,0 +1,17 @@
+// Workshop 3: DIY
+// Date: 10/11/2020
+// Author: Matin Hosseini Pour
+// Email: smmhosseini-pour@myseneca.ca
+// SenID: 151267192
+/////////////////////////////////////////////
+This workshop was a little unexpected. because we were used to have some pre-made modules and we only had
+to finish editing them. but in this one we had to write them from the scratch and that was unexpected, because
+i never paid enough attention to those ifndef comments before and i didnt know about that untill i had to write
+them by myself earlier this week.
+overall this workshop was good for me, however giving styles to the texts, is not easy as it looks like, because 
+even a single dash can result in "NOT CORRECT OUTPUT". But in order to avoid them we tried to organize
+and split every task like using two functions in order to print header and footer of our result and printing the
+actual data in one other function , which helped alot, because if we had any problem we only had to fix one time.
+at the end, it was a pretty good time to use constructors and destructors but i did not use them because i did not
+have much time and didnt want to risk something new and losing time on searching on google and fixing bugs so.
+

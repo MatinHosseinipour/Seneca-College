@@ -1,0 +1,12 @@
+// Workshop 4: DIY
+// Date: 10/18/2020
+// Author: Matin Hosseini Pour
+// Email: smmhosseini-pour@myseneca.ca
+// SenID: 151267192
+/////////////////////////////////////////////
+
+In this workshop focus pretty much was on constructors and destructors. we were pushed to use default
+and modified constructors with different inputs rather than normal functions in order to optimize the project
+and understand the ease of using them. like using destructor as an dealocator in order to code less than before.
+we also implemented the use of reference 'this' for the function read to go even further. this workshop was 
+an easy one, which mainly is because constructors and destructors are made to make it easy for us.

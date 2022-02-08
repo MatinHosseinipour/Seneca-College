@@ -1,0 +1,40 @@
+/* Citation and Sources...
+Final Project Milestone 5
+Module: reflection
+Filename: reflect.txt
+Version 1.0
+Author	John Doe
+Revision History
+Matin Hosseini Pour
+151267192
+smmhosseini-pour@myseneca.ca
+-----------------------------------------------------------
+Date      Reason
+2020/12/3 Preliminary release
+2020/12/3  Debugged DMA
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my workshops and assignments.
+-----------------------------------------------------------
+-----------------------------------------------------------*/
+
+
+Hello professor, first of i have to confess that i need not expect the final exam at all. i was thinking like
+it would be our final exam lol. ok i have to confess something else too. i have completely forgot about the fact
+that we had menu module at first milestone, and i thought it is some kind of a challange that we have to figure
+that out how to structure the menu module, so forgive me if that is different than what we had to do. as you
+broke it into steps the project became like a piece of cake. couldnt be easier than this. although at some points
+i wanted to throw my laptop out of the window, it wasnt about the project, that was because it works with "naft"
+and im tired of it lol. thank you so much for giving us your time through the semester and taught us c++ language
+its been a really fun and easy journey with you and i owe it to a such professor like you.
+overall im happy that i took this course with you, you were always available for help as ive seen you helping
+other classmates and been teaching so well on online sessions and also i thank you for caring about students who
+might fell asleep at the session (talking about myself :D forgive me if i slept sometimes tbh 8 in the morning is hard xD)
+the only thing that i did not like about the course was the quizes as you can my grades not good either or ive
+missed some of them. for such a course (programming course) workshops should be our measurements not quizes
+because some people especially me may not pay attention to the details but be good at coding. for example 
+i would never say i need a binary something somewhere, i would say i need for example integer overthere.
+
+thank you so much again for everything that was all
+sincerely,
+Matin

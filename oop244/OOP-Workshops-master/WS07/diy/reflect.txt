@@ -1,0 +1,14 @@
+// Workshop 7: DIY - Reflection
+// Date: 11/09/2020
+// Author: Matin Hosseini Pour
+// Email: smmhosseini-pour@myseneca.ca
+// SenID: 151267192
+/////////////////////////////////////////////
+
+its been told that the purpose of this workshop was to keep practising on some of the old lectures like
+inheriting classes, base member functions and more importantly overloading functions
+overall i think it was a complete wrap up on the lectures we had lately about classes
+and im guessing like were going on a new stage from now. overall it was all the same, working
+and doing the stuff we did before, which was actually really helpfull. me myself had some tiny mistakes
+and doing these one more time will definitely help me to keep in mind not making them again. last but not least
+i guess i should be ready for the upcoming stage.

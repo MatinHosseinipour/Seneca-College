@@ -1,0 +1,13 @@
+// Workshop 4
+// reflect
+// Matin Hosseini Pour
+// 151267192
+// smmhosseini-pour
+//Feb 14th, 2021
+
+
+in both restaurant and confirmationsender modules, the reservation is being created deleted or modified since it has been
+managing the object we are using composition in this workshop. since the only independent module is the reservation module
+therefore we do not have any associations. it can be like the person and name example on the site, name is independent but
+person was working based on name and its own variables[age] here, both restaurant and confirmation sender have their own
+variables but their protagonist is the reservation module.

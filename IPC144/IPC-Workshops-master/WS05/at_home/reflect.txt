@@ -1,0 +1,28 @@
+//==============================================
+// Name:           Matin Hosseini Pour
+// Student Number: 151267192
+// Email:          smmhosseini-pour@myseneca.ca
+// Section:        NJJ
+// Workshop:       5 (at-home)
+//==============================================
+
+
+
+	To be honest, this workshop was a little challenging for me. the new code that i have learnt in this week was the struct.
+First, i was thinking like it is an useless command while we have array. But after using it for work i realized that it could be much
+better than arrays. Because in arrays we have to use numbers for declaring rows and columns while here for each row and column we
+are able to set names, which really makes it easier for us to find and use the varialbes stored in them.
+
+	Two challenging parts that i have had in at home part was about part 1 ,3 and 4. for part 1 i realized if i still use the variable
+'i' in parts 3 and 4, i would have problem for printing my struct and it would not print anything at all. And for the parts 3 and 4, the
+stupidest thing that i did was that when i was searching for the ID and checking if it is available i forgot to put two '=' in my condition
+tho it was changing all my structs to that wrong input instead of checking them.
+
+	There were also something wrong with the part 2 that we can call it a bug. Which was that everytime we were going to part
+2 we were increasing 'count' by 1. And then we would check if we could add anymore employees. Tho if the user would try to add employee
+7 times, 'count' would be 6 and even if we would delete an employee data, we still would not be able to add any employee because (count > SIZE).
+The solution i used to fix this bug was to add a line 'count--' after the error saying we do not have enough space for adding.
+
+	And for the last question, if i am right, if we would declare the employee struct in a seperate database file, it would be 
+much better and more convinient for users and also the programmers. Because we could save the variables and use them the next time
+we were using the program.

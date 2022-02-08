@@ -1,0 +1,45 @@
+// Workshop 9 - Multi-Threading
+// Reflect
+// Matin Hosseini Pour
+// 151267192
+// smmhosseini-pour
+//April 3rd, 2021
+
+
+Well the purpose of the workshop was to learning the threads and multythreading which was demonstrated perfeclty 
+just like before.
+I had to use binary files for this workshop since the task required me to do both read and right the file.
+I had done it by using switches , namely std::ios::in for reading and std::ios::out for writing into a file.
+"
+    To write:
+    fstream input(file, std::ios::out);
+
+    To read:
+    fstream input(file,std::ios::in);
+"
+Bind function with the help of placeholders, helps to manipulate the position and number of values to be used by the function
+and modifies the function according to the desired output. It is useful here as the arguments used in every thread is different 
+and it would be very time consuming to write separate function calls for each instead we use placeholders and pass the desired values.
+Like the way i coded, here i first of binded the function converter and followed by that i created the threads i want to use and passed them
+needing values.
+"
+    auto f1 = std::bind(converter,_1, key, _2, Cryptor());
+    std::thread t1(f1, str1, size);
+    std::thread t2(f1,str2,size);
+    std::thread t3(f1,str3,size);
+    std::thread t4(f1,str4,size1);
+"
+Multithreading allows the execution of multiple parts of a program at the same time. These parts are known as threads and are lightweight 
+processes available within the process. So multithreading leads to maximum utilization of the CPU by multitasking.
+Here we accomplished the task of multitasking using threads. I created 4 threads and divided the work equally among them so that they may 
+work concurrently and our task might get finished earlier and CPU utilization becomes optimal.
+"
+    std::thread t1(f1, str1, size);
+    std::thread t2(f1,str2,size);
+    std::thread t3(f1,str3,size);
+    std::thread t4(f1,str4,size1);
+    t1.join();
+    t2.join();
+    t3.join();
+    t4.join();
+"

@@ -1,0 +1,23 @@
+//==============================================
+// Name:           Full name here
+// Student Number: #########
+// Email:          userID@myseneca.ca
+// Section:        XXX
+// Date:           
+//==============================================
+// Assignment:     2
+// Milestone:      2
+//==============================================
+
+
+Firstly, the important thing i have learnt in these two milestones was, although the clear keyboard function is very useful 
+but i do not have to put it everywhere tho. first, i have added it everywhere, and i could not get the write output while
+my code was right. it was really confusing to get the idea that the enters i add everyline while the program is not working at all 
+is because of this little function
+
+secondly, i have believed in functions and classed morethan before, by writing one function yes() and using it everywhere else that
+we have included the appropriate header. which really makes us to write an optimized program
+
+thirdly, after debugging the program, i have realized how easy it was by going to each function to fixing some problem there. in other
+word writing an organized and neat program helps us to find and fix the bugs way easier. at least we do not have to spend much time
+on finding that part of the program.

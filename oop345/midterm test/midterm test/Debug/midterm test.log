@@ -1,0 +1,18 @@
+﻿  Source1.cpp
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(12,2): error C2672: 'begin': no matching overloaded function found
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): error C2893: Failed to specialize function template 'unknown-type std::begin(_Container &)'
+E:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xutility(1903): message : see declaration of 'std::begin'
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): message : With the following template arguments:
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): message : '_Container=short *'
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): error C2784: 'const _Elem *std::begin(std::initializer_list<_Elem>) noexcept': could not deduce template argument for 'std::initializer_list<_Elem>' from 'short *'
+E:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\initializer_list(57): message : see declaration of 'std::begin'
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(12,2): error C2672: 'end': no matching overloaded function found
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): error C2893: Failed to specialize function template 'unknown-type std::end(_Container &)'
+E:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xutility(1913): message : see declaration of 'std::end'
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): message : With the following template arguments:
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): message : '_Container=short *'
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): error C2784: 'const _Elem *std::end(std::initializer_list<_Elem>) noexcept': could not deduce template argument for 'std::initializer_list<_Elem>' from 'short *'
+E:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\initializer_list(63): message : see declaration of 'std::end'
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): error C3536: '<begin>$L0': cannot be used before it is initialized
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(11,2): error C3536: '<end>$L0': cannot be used before it is initialized
+C:\Users\matin\Desktop\seneca cpa\sem3\oop345\midterm test\midterm test\Source1.cpp(12,2): error C2100: illegal indirection

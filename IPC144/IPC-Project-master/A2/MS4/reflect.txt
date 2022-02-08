@@ -1,0 +1,27 @@
+//==============================================
+// Name:           Matin Hosseini Pour
+// Student Number: 151267192
+// Email:          smmhosseini-pour@myseneca.ca
+// Section:        NJJ
+// Date:           July 31st
+//==============================================
+// Assignment:     2
+// Milestone:      4
+//==============================================
+
+by doing two last milestones of this project, my whole opinion regarding programming has changed. during the process, i have got some
+errors that when i was searching for them, realized wooh someone else had this error too, lets see what is the response from microsoft
+and the response was not nothing but "we have send your problem to our engineers department, but due to lacking informations they are
+not able to solve your problem". At that moment i felt like i was burning and freezing at the same time, i also was cold sweeting. after 
+contacting friends and asking about their opinion could not fix anything unless some miracle happened and a friend said forget about the 
+visual studio try to run it on matrix, at hopefully i got one less problem that moment xD. although it took more time, that i had to upload
+check edit and reupload the whole project everytime, but it worthed it.
+
+for the benefits of find index and get ten digit functions i can write an essay to be honest. Because they have been used nearly in every
+function through the process. instead of writing a same code everywhere, we simply wrote a function and used that everywhere which
+optimized the project and avoids dirty coding.
+
+as i said before it would be much better if we use something like a text file as a data base. because everytime our client opens the app
+it will make Contacts with same old information, and while our client enters different information by closing the app, the whole thing 
+will be deleted and we are at the first point again. so by using a text file as a data base we will avoid these situations from happening.
+not only that, but also we will be able to make unlimited slots for saving contacts base on the storage.

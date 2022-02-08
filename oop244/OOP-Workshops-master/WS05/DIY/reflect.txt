@@ -1,0 +1,17 @@
+// Workshop 5: DIY
+// Date: 10/28/2020
+// Author: Matin Hosseini Pour
+// Email: smmhosseini-pour@myseneca.ca
+// SenID: 151267192
+/////////////////////////////////////////////
+
+this one was pretty easy to be honest. ofcourse the purpose of this workshop was to get used to operators
+and it had some tiny details like if we wanted to overload the actual += operator we have to do that outside
+of our class (i guess i did not pay enough attention in the class, because i had to look at all the sources and
+the lecture again to see what am i doing wrong lol) lab was half way done so dont need any explanation. for
+the diy part i tried as much as possible to optimize my program by putting every repeating part into one
+function like setGPA and setGrade. in diy i chose a different way to check the validity of the array by
+using bool d_valid; tho everytime we were setting new grade i had to call the set gpa and grade again 
+and set the validity again. not going to lie i wanted to set those steps into one setMark function but i just
+thought it would be really foolish if i do that so i just went this way. and yeah thats it my reflection on this
+workshop.

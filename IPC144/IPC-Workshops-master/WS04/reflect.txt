@@ -1,0 +1,24 @@
+//==============================================
+// Name:           Matin Hosseini Pour
+// Student Number: 151267192
+// Email:          smmhosseini-pour@myseneca.ca
+// Section:        NJJ
+// Workshop:       4 (at-home)
+//==============================================
+
+First of Accept my apologize for being late this much! after passing the deadline i thought im not able to submit anymore and didnt
+try until doing in lab workshop 5 which was written late submissions will get penalty, usually students should not get proud of getting
+late marks but for me getting a late mark for now is better than getting nothing :D thanks professor for giving me your valuabe time.
+
+
+	By upgrading the in lab part to the instructions given for at home part, i realized that i have to say good bye to easy
+programming because here i had to save and store the values. So first i was thinking of i may have to make 20 different values for 10
+days and each high and low and use them as much as user wants, but it was the stupidest way ever. Though i chose to write it with arrays, even
+it was much easier at every angle. because i could use that array for determining nearly everything. I could find the highest and lowest temperature
+as well as the average of some specific days.
+
+
+	Not to mention, after finishing the whole program, the idea of using functions just popped in my mind, and i was like, "Wow,
+it could have been even easier than this". If i would write a function for finding the lowest and the highest, i could use that two times, instead
+of rewriting the same computation only with different names and variables. But no one would understand which way is better
+unless they try, right? now atleast i have the experience and next time i will first check if i can do that with functions.
