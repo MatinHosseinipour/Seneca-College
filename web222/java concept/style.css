@@ -1,0 +1,11 @@
+.wrapper{
+    text-align: center;
+}
+.parts{
+    position:relative;
+    display: inline-block;
+    width:250px;
+    height: 150px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 auto;
+}

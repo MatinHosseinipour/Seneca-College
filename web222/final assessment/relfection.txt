@@ -1,0 +1,24 @@
+Matin Hosseini Pour
+
+Final Assessment Web222
+Prof: Muath
+
+so about the forms. i used to think that we need js to work with them. i was really shocked that i realized
+for sending the data we dont need to code any js at all , that action tag i mean. form tag is a world itself
+a lot of features input types pattern name everything. it is nearly flawless. you receive whatever you want
+with forms without any concern. for validation ofcourse i did not know about patterns and i used a method
+for onclick and was checking the users input with regex in js but after i went to do for the contact page
+i searched a little more and realized the thing i did with js i can easily do it with pattern attribute and its
+regex as well. again after that i realized im such an idiot because when you set the input type to email
+it does everything it self and i dont have to do anything. :|
+by finishing coding i loaded the page and tried some garbage values in the inputs and that was the way i found
+the bugs in my patterns or anything. and it was easy to fix because when you enter garbage value for tel
+and it submits that you definitely know the problem is the pattern of tel input.
+my advice is that they should learn everything about forms before doing anything. because when you know
+the ways of doing stuff you would not do what i did at first and do not have to bother yourself coding extra.
+searching is the key. some valid websites like w3schools and stackoverflow are really neccessary because
+you will see when others had to do the same what problems they had and how they have fixed them.
+
+i have uploaded the theme on one of my own sites.
+http://store.zarbaf.ca
+you can check it out there

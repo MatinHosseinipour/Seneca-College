@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WEB222</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>WEB222 Assignment 4 - DOM Manipulation</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Country List (By Language)</a>
+            <ul>
+              <li id="menu_english"><a href="#">English</a></li>
+              <li id="menu_arabic"><a href="#">Arabic</a></li>
+              <li id="menu_chinese">
+                <a href="#">中文 (Chinese)</a>
+              </li>
+              <li id="menu_french"><a href="#">French</a></li>
+              <li id="menu_hindi"><a href="#">Hindi</a></li>
+              <li id="menu_korean"><a href="#">Korean</a></li>
+              <li id="menu_japanese"><a href="#">Japanese</a></li>
+              <li id="menu_russian"><a href="#">Russian</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">By Population</a>
+            <ul>
+              <li id="menu_population_100_000_000m">
+                <a href="#">&gt; 100,000,000</a>
+              </li>
+              <li id="menu_population_1m_2m">
+                <a href="#">1 ~ 2 million</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">By Area &amp; Continent</a>
+            <ul>
+              <li id="menu_americas_1mkm">
+                <a href="#"> 1 million Km<sup>2</sup>, Americas</a>
+              </li>
+              <li id="menu_asia_all">
+                <a href="#">All size, Asia</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="honesty.html">Honesty</a></li>
+        </ul>
+      </nav>
+
+      <section class="main">
+        <!-- Make sure you update the value of the table's title when changing row data-->
+        <h4 id="subtitle">List of Countries and Dependencies</h4>
+        <table id="outputTable">
+          <thead>
+            <tr>
+              <th>Flag</th>
+              <th>Code</th>
+              <th id="country-name">Country/Dep. Name</th>
+              <th>Continent</th>
+              <th>Area (Km<sup>2</sup>)</th>
+              <th>Population</th>
+              <th>Capital</th>
+            </tr>
+          </thead>
+          <tbody id="table-rows"></tbody>
+        </table>
+      </section>
+
+      <footer>
+        <!-- Update this with your name -->
+        <p class="center">&copy; 2020 Student Matin Hosseini Pour</p>
+      </footer>
+    </div>
+
+    <!--
+      Load all of our scripts. NOTE: the order matters if later scripts
+      depend on things defined in earlier scripts.
+    -->
+    <script src="js/countries-data.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

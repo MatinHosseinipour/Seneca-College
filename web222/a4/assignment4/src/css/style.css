@@ -1,0 +1,94 @@
+.container {
+  width: 85%;
+  margin: auto;
+}
+nav {
+  background-color: navy;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav a:link,
+nav a:visited {
+  display: block;
+  color: #ffffff;
+  background-color: navy;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-left: 1px inset #ecefec;
+  border-right: 1px inset #ecefec;
+}
+
+nav ul li ul {
+  padding: 8px 12px;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+nav ul li:hover ul {
+  display: block;
+  padding: 0;
+  width: 150px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul li ul li {
+  display: block;
+  text-align: left;
+  width: 150px;
+}
+
+nav a:hover {
+  background-color: indigo;
+  color: #ffffff;
+}
+.clear {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+  padding-top: 0.6em;
+}
+
+footer {
+  background-color: navy;
+  color: #ffffff;
+  height: 2.5em;
+}
+
+thead {
+  background-color: lightblue;
+}
+tbody {
+  background-color: lightyellow;
+}
+tfoot {
+  background-color: lightgreen;
+}
+table {
+  border: 2px outset darkblue;
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 2px inset darkgreen;
+}
+.main {
+  padding: 0 3px;
+}
